@@ -1,0 +1,27 @@
+html
+    head
+        title Main Menu
+        link(rel = "stylesheet" type = "text/css" href = "/styles.css")
+    body
+        include ../views/links
+        div#info 
+        div#main
+            div#left(class = 'column left')
+                h1 Artist name:  #{data.artistName}
+                h5 Made by artist: 
+                each i in data2
+                    br
+                    a(href = `/gallery/${i._id}`) #{i.Title}
+                    br
+            div#middle(class = 'column middle')
+                each i in data3
+                    br
+                    a(href = `/workshop/${i._id}`) #{i.name}
+                    h5 Description: #{i.description}
+                    br
+            div#right(class = 'column right')
+                br
+                br
+                button#follow(type = "button" onclick = "follow()") follow 
+                div#formErrors
+    script(src = "/follow.js")

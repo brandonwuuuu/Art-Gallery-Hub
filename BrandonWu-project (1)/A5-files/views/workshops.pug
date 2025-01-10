@@ -1,0 +1,11 @@
+html
+    head
+        title Workshops
+        link(rel = "stylesheet" type = "text/css" href = "/styles.css")
+    body
+        include ../views/links
+        each i in data
+            br
+            a(href = `/workshop/${i._id}`) #{i.name}
+            br
+            

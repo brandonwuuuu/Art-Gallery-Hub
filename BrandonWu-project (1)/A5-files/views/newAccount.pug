@@ -1,0 +1,21 @@
+html
+    head
+        title Sign up
+        link(rel = "stylesheet" type = "text/css" href = "/styles.css")
+    body
+        include ../views/links
+        div#info 
+        div#main
+            div#left(class = 'column left')
+            div#middle(class = 'column middle')
+                h5 Enter username: 
+                
+                input#username(type='text', name='username')
+                h5 Enter password: 
+                
+                input#password(type='text', name='password')
+                
+                div.button1
+                    button#login(type = "button" onclick="createAccount()") Create Account
+            div#right(class = 'column right')
+    script(src = "/newAccount.js")

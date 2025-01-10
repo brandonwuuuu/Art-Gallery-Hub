@@ -1,0 +1,24 @@
+html
+    head
+        title Main Menu
+        link(rel = "stylesheet" type = "text/css" href = "/styles.css")
+    body
+        include ../views/links
+        div#info 
+        div#main
+            div#left(class = 'column left')
+            
+            div#middle(class = 'column middle')
+                h1 Add new workshop:
+                h1 Workshop Name: 
+                
+                input#name(type='text', name='name')
+
+                h1 Description:
+                
+                input#description(type='text', name='description')
+                
+                div.button1
+                    button#addart(type = "button" onclick="addWorkShop()") Add workshop
+            div#right(class = 'column right')
+    script(src = "/addWorkShop.js")
