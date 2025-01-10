@@ -1,0 +1,39 @@
+html
+    head
+        title Main Menu
+        link(rel = "stylesheet" type = "text/css" href = "/styles.css")
+    body
+        include ../views/links
+        div#info 
+        div#main
+            div#left(class = 'column left')
+            
+            div#middle(class = 'column middle')
+                h1 Add new gallery:
+                h1 Art Name: 
+                
+                input#title(type='text', name='title')
+                h1 Year: 
+                
+                input#year(type='text', name='year')
+                
+                h1 Category: 
+                
+                input#category(type='text', name='category')
+                
+                h1 Medium: 
+                
+                input#medium(type='text', name='medium')
+
+                h1 Description:
+                
+                input#description(type='text', name='description')
+              
+                h1 Poster:
+
+                input#poster(type='text', name='poster')
+                
+                div.button1
+                    button#addart(type = "button" onclick="addArt()") Add art
+            div#right(class = 'column right')
+    script(src = "/addArt.js")
